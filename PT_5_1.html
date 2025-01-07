@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my learning chapter 5_1</title>
+
+    <style>
+         p{color : blueviolet;}  /** 일단 p는 purple*/
+        *{color : red;}         /** 그전에 모든 컬러는 red로 */
+
+
+        #green{ color : green;}  /* id가 green 인애들은 green*/
+        #green[href] { color:aqua;}
+        .orange{color :indigo;}   /* class가 오렌지인 애들은 인디고*/
+        .orange[href = "https://www.naver.com"]{color : orange;} /*오렌지클래스 중에 href는 오렌지*/
+
+        a[href] {
+            color :darkgreen;
+        }
+        a[href = "https://www.naver.com"]{
+            color :deeppink;
+        }
+        a[title = "네이버3"]
+        {
+            color : blue;
+        }
+        a[href = "https://www.naver.com"][title = "네이버3"]{
+            color : black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Today gonna learn 선택자 bitch red </h1>
+    <p>all color is red!!! BV</p>
+    <p> because i 적용했거든 * 전체 선택자to red !!!!BV</p>
+    <p> but 그러나, p에는 blue violet을 적용했지롱 !!BV</p>
+    <p id = "green">이건 무슨색일까 그린 왜냐하면 id가 그린 !!green</p>
+    <!-- <p id = "green">이것도?</p>  이건 사용하면 안된다 중복 -->
+     <p class = "orange">이건 오렌지 클래스 색깔 indigo!!!!!</p>
+     <h2 class = "orange">심지어 이건 중복도 돼 !!!! 개편해 ~~~~!!!indigo</h2>
+
+     <a href = "#" target="_blank" title = "네이버1">
+        네이버로 가보자~darkgreen
+     </a> <br>
+     <a href = "https://www.naver.com" target="_blank" title = "네이버2">
+        네이버로 가보자~deeppink
+     </a> <br>
+     <a href = "#" target="_blank" title = "네이버3">
+        네이버로 가보자~blue
+     </a> <br>
+     <a href = "https://www.naver.com" target="_blank" title = "네이버3">
+        네이버로 가보자~black
+     </a> <br>
+
+     <a id = "green" href = "#">아이디href 색깔은 aqua</a> <br>
+     <a class = "orange" href = "https://www.naver.com">오렌지클래스 href 색깔은 orange</a>
+
+
+    
+</body>
+</html>
